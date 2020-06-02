@@ -27,8 +27,8 @@
                <ul>
                {% for subentry in entry.subfolderitems %}
                
-                  {% if subentry.absolute }
-                     {% assign url = subentry.absolute %}
+                  {% if subentry.spark }
+                     {% assign url = "https://spark.adobe.com/page" | append: subentry.spark %}
                   {% else %}
                      {% assign url = site.baseurl | append: subentry.url %}
                   {% endif %}
