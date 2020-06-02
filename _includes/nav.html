@@ -24,7 +24,7 @@
             {% if entry.subfolderitems[0] %}
                   <ul>
                   {% for subentry in entry.subfolderitems %}
-                      <li><a href="{{ subentry.url }}">{{ subentry.page }}</a></li>
+            <li><a href="{{ site.baseurl }}/{{ subentry.url }}">{{ subentry.page }}</a></li>
                   {% endfor %}
                   </ul>
                 {% endif %}
