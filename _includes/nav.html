@@ -26,12 +26,7 @@
             {% if entry.subfolderitems[0] %}
                <ul>
                {% for subentry in entry.subfolderitems %}
-               
-                  {% if subentry.spark }
-                  <li><a href="{{ subentry.spark }}" target="_blank">{{ subentry.page }}</a></li>
-                  {% else if subentry.url %}
-                  <li><a href="{{ site.baseurl | append: subentry.url }}">{{ subentry.page }}</a></li>
-                  {% endif %}
+                  <li><a href="{{ subentry.url }}">{{ subentry.page }}</a></li>
                {% endfor %}
                </ul>
              {% endif %}

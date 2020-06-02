@@ -37,11 +37,12 @@ nav:
     url: "https://brandome.github.io/photoblog/gallery/"  
     subfolderitems:
       - page: Birds
-        spark: "https://spark.adobe.com/page/Jp08qgMB9xXB5/"
+        url: "https://spark.adobe.com/page/Jp08qgMB9xXB5/"
       - page: Cats
-        url: "/gallery/gallery02"
+        url: "https://brandome.github.io/photoblog/gallery/gallery02"
       - page: Things
-        url: /gallery/gallery03
+        url: "https://brandome.github.io/photoblog/gallery/gallery03"
+        
   - page: Journal
     url: "https://brandome.github.io/photoblog/journal/"
   - page: Posts
