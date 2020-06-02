@@ -1,0 +1,35 @@
+
+
+
+---
+layout: page
+description: "Quick-list of recent posts"
+title: "Writings"
+active: posts
+header-img: "img/writing-bg.jpg"
+---
+
+<head>
+<link rel="stylesheet" href="{{ site.baseurl }}/css/journal.css" media="screen" />
+</head>
+
+<body class="journal">
+<div class="archive">
+  <h1 class="archive-title" style="display:inline-block;"> POSTS (short) </h1>
+
+<section class="section--postsWrapper">
+  <div class="container">
+    <div class="blockGroup">
+      <ul>
+        {% for post in site.posts %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+</body>
