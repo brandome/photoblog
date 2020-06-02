@@ -29,11 +29,9 @@
                
                   {% if subentry.spark }
                   <li><a href="{{ subentry.spark }}" target="_blank">{{ subentry.page }}</a></li>
-                  {% else %}
+                  {% else if subentry.url %}
                   <li><a href="{{ site.baseurl | append: subentry.url }}">{{ subentry.page }}</a></li>
                   {% endif %}
-                  
-               
                {% endfor %}
                </ul>
              {% endif %}
