@@ -15,20 +15,30 @@
             
          {% for entry in site.nav %}
             {% assign lowercase_nav_item = nav_item.page | downcase %}
+            
             {% if page.active == lowercase_nav_item %}
-              <li class="active">
+            <li class="active">
             {% else %}
-              <li>
+            <li>
             {% endif %}
+            
             <a href="{{ entry.url }}">{{ entry.page }}</a>
             {% if entry.subfolderitems[0] %}
-                  <ul>
-                  {% for subentry in entry.subfolderitems %}
-            <li><a href="{{ site.baseurl }}/{{ subentry.url }}">{{ subentry.page }}</a></li>
-                  {% endfor %}
-                  </ul>
-                {% endif %}
-              </li>
+               <ul>
+               {% for subentry in entry.subfolderitems %}
+               
+                  {% if subentry.global }
+                     {% assign url = subentry.global %}
+                  {% else %}
+                     {% assign url = site.baseurl + subentry.url %}
+                  {% endif %}
+                  
+                  <li><a href="{{ url }}">{{ subentry.page }}</a></li>
+               
+               {% endfor %}
+               </ul>
+             {% endif %}
+           </li>
          {% endfor %}
           </ul>
         </div>

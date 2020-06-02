@@ -37,6 +37,7 @@ nav:
     url: "https://brandome.github.io/photoblog/gallery/"  
     subfolderitems:
       - page: Birds
+        global: "https://spark.adobe.com/page/Jp08qgMB9xXB5/"
         url: "/gallery/gallery01"
       - page: Cats
         url: "/gallery/gallery02"
