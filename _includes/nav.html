@@ -28,12 +28,11 @@
                {% for subentry in entry.subfolderitems %}
                
                   {% if subentry.spark }
-                     {% assign url = "https://spark.adobe.com/page" | append: subentry.spark %}
+                  <li><a href="{{ subentry.spark }}">   
                   {% else %}
-                     {% assign url = site.baseurl | append: subentry.url %}
+                  <li><a href="{{ site.baseurl | append: subentry.url }}">
                   {% endif %}
-                  
-                  <li><a href="{{ url }}">{{ subentry.page }}({{url}})</a></li>
+                  {{ subentry.page }}({{url}})</a></li>
                
                {% endfor %}
                </ul>
