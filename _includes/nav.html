@@ -32,7 +32,7 @@
                   {% else %}
                   <li><a href="{{ site.baseurl | append: subentry.url }}">
                   {% endif %}
-                  {{ subentry.page }}({{url}})</a></li>
+                  {{ subentry.page | append: subentry.spark }}</a></li>
                
                {% endfor %}
                </ul>
