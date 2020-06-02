@@ -27,13 +27,13 @@
                <ul>
                {% for subentry in entry.subfolderitems %}
                
-                  {% if subentry.global }
-                     {% assign url = subentry.global %}
+                  {% if subentry.absolute }
+                     {% assign url = subentry.absolute %}
                   {% else %}
                      {% assign url = site.baseurl | append: subentry.url %}
                   {% endif %}
                   
-                  <li><a href="{{ url }}">{{ subentry.page }}</a></li>
+                  <li><a href="{{ url }}">{{ subentry.page }}({{url}})</a></li>
                
                {% endfor %}
                </ul>
