@@ -10,10 +10,13 @@
   <figure class="gallery-item">
 
 	<header class='gallery-icon'>
-
-<a href="{{ site.url }}{{ site.baseurl }}{{ img.image_path }}" class="popup"  title="{{ img.image-caption }}" data-caption="{{ img.image-copyright }}">
-<img src="{{ site.url }}{{ site.baseurl }}{{ img.image_path }}"></a>
-						
+{% if img.global %}
+  <a href="{{ img.global }}" class="popup"  title="{{ img.image-caption }}" data-caption="{{ img.image-copyright }}">
+  <img src="{{ img.global }}"></a>
+{% else %}	
+  <a href="{{ site.url }}{{ site.baseurl }}{{ img.image_path }}" class="popup"  title="{{ img.image-caption }}" data-caption="{{ img.image-copyright }}">
+  <img src="{{ site.url }}{{ site.baseurl }}{{ img.image_path }}"></a>
+{% endif %}					
 	</header>	
 		
    <figcaption class='gallery-caption'>
