@@ -33,10 +33,21 @@ comments :
 
 # Internal nav
 nav:
-  - GALLERY: "https://brandome.github.io/photoblog/gallery/"  
-  - JOURNAL: "https://brandome.github.io/photoblog/journal/"
-  - POSTS: "https://brandome.github.io/photoblog/journal/slim"
-  - ABOUT: "https://brandome.github.io/photoblog/about/"
+  - page: Gallery
+    url: "https://brandome.github.io/photoblog/gallery/"  
+    subitems:
+      - page: Birds
+        url: "/gallery/gallery01"
+      - page: Cats
+        url: "/gallery/gallery02"
+      - page: Things
+        url: /gallery/gallery03
+  - page: Journal
+    url: "https://brandome.github.io/photoblog/journal/"
+  - page: Posts
+    url: "https://brandome.github.io/photoblog/journal/slim"
+  - page: About
+    url: "https://brandome.github.io/photoblog/about/"
 
 # All translation keys
 translations:
