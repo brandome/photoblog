@@ -28,11 +28,11 @@
                {% for subentry in entry.subfolderitems %}
                
                   {% if subentry.spark }
-                  <li><a href="{{ subentry.spark }}">   
+                  <li><a href="{{ subentry.spark }}" target="_blank">{{ subentry.page }}</a></li>
                   {% else %}
-                  <li><a href="{{ site.baseurl | append: subentry.url }}">
+                  <li><a href="{{ site.baseurl | append: subentry.url }}">{{ subentry.page }}</a></li>
                   {% endif %}
-                  {{ subentry.page | append: subentry.spark }}</a></li>
+                  
                
                {% endfor %}
                </ul>
