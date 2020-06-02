@@ -34,7 +34,8 @@ comments :
 # Internal nav
 nav:
   - GALLERY: "https://brandome.github.io/photoblog/gallery/"  
-  - JOURNAL: "https://brandome.github.io/photoblog/journal/"
+  - JOURNAL: "https://brandome.github.io/photoblog/journal/index.html"
+  - POSTS: "https://brandome.github.io/photoblog/journal/slim.html"
   - ABOUT: "https://brandome.github.io/photoblog/about/"
 
 # All translation keys
