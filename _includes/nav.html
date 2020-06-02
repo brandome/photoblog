@@ -30,7 +30,7 @@
                   {% if subentry.global }
                      {% assign url = subentry.global %}
                   {% else %}
-                     {% assign url = site.baseurl + subentry.url %}
+                     {% assign url = site.baseurl | append: subentry.url %}
                   {% endif %}
                   
                   <li><a href="{{ url }}">{{ subentry.page }}</a></li>
