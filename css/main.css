@@ -65,6 +65,16 @@ hr.small {
   font-weight: 800;
   letter-spacing: 1px;
 }
+
+.navbar-custom .nav li a + ul {
+  display: none;
+}
+
+.navbar-custom .nav li:hover a + ul,
+.navbar-custom .nav .active a + ul {
+  display: block;
+}
+
 @media only screen and (min-width: 768px) {
   .navbar-custom {
     background: transparent;
